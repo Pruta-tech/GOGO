@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Website route controls
-app.use('/', require('./server/routes/main'));
+app.use('/', require('./routes/index'));
 
 
 // Initialize Mailchimp client
