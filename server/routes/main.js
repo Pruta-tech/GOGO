@@ -3,7 +3,7 @@ const router = express.Router();
 const axios = require('axios');
 
 // Routes
-router.get('', (req, res) => {
+router.get('/', (req, res) => {
     res.render('index');
 });
 
