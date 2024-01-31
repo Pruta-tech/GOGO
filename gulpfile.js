@@ -1,10 +1,10 @@
 const gulp = require('gulp');
 const ejs = require('gulp-ejs');
 
-function compileEJS() {
+function build() {
     return gulp.src('src/templates/*.ejs')
         .pipe(ejs())
         .pipe(gulp.dest('dist'));
 }
 
-exports.default = compileEJS;
+exports.build = build;
